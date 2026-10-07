@@ -1,4 +1,4 @@
-# Grievance.io 2.0
+# Grievance.io 
 
 Full-stack University Student Grievance Redressal System built with a React 18 frontend and an Express / MongoDB backend.
 
@@ -7,7 +7,7 @@ Full-stack University Student Grievance Redressal System built with a React 18 f
 ## 📁 Project Structure
 
 ```text
-grievence_2.0/
+grievence_
 ├── backend/                  # RESTful API (Express + MongoDB)
 │   ├── src/                  # Controllers, models, routes, middleware, seed script
 │   ├── server.js             # Server entry point (port 5000)
