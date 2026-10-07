@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #f5f5f7;
+    color: #1d1d1f;
+    font-family: 'Inter', sans-serif;
+  }
+}
+
+/* Glassmorphism Styles */
+.glass-card {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 20px 40px -5px rgba(0, 0, 0, 0.05);
+}
+
+.glass-panel {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.03);
+}
+
+/* Auth Input */
+.auth-input {
+  width: 100%;
+  background-color: #f3f4f6;
+  border: 1px solid transparent;
+  padding: 1rem 1.5rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  transition: all 0.2s;
+  outline: none;
+}
+
+.auth-input:focus {
+  background-color: #ffffff;
+  border-color: #e5e7eb;
+  box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Navigation Link States */
+.nav-link.active {
+  color: #000000;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  font-weight: 600;
+}
+
+/* Chat Bubbles */
+.chat-bubble-admin {
+  background: #f3f4f6;
+  border-radius: 12px 12px 12px 0;
+  color: #1f2937;
+}
+
+.chat-bubble-student {
+  background: #000;
+  border-radius: 12px 12px 0 12px;
+  color: #fff;
+}
+
+.chat-admin {
+  background: #000000;
+  color: #ffffff;
+  border-radius: 16px 16px 4px 16px;
+}
+
+.chat-student {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  color: #1f2937;
+  border-radius: 16px 16px 16px 4px;
+}
+
+/* Reveal Animation */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Smooth Fade In */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.25s ease-out forwards;
+}
